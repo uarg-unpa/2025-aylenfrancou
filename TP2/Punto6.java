@@ -15,8 +15,9 @@ public class Fecha {
     }
 
     private boolean esFechaValida(int d, int m, int a) {
-        if (a < 1 || m < 1 || m > 12 || d < 1) return false;
-
+        if (a < 1 || m < 1 || m > 12 || d < 1){
+            return false;
+        }
         int diasEnMes;
         switch (m) {
             case 2:
