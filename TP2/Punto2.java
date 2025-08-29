@@ -38,3 +38,45 @@ public class Libro {
         System.out.println("Libro: " + titulo + " de " + autor + " (" + genero + ")");
     }
 }
+public class Cancion {
+    private String titulo;
+    private String artista;
+    private double duracion;
+    public Cancion(String titulo, String artista, double duracion) {
+        this.titulo = titulo;
+        this.artista = artista;
+        this.duracion = duracion;
+    }
+    public void reproducir() {
+        System.out.println("Reproduciendo: " + titulo + " por " + artista);
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Canción: " + titulo + " - Artista: " + artista + " - Duración: " + duracion + " min");
+    }
+}
+public class Televisor {
+    private String marca;
+    private int pulgadas;
+    private String resolucion;
+    private boolean encendido;
+    public Televisor(String marca, int pulgadas, String resolucion) {
+        this.marca = marca;
+        this.pulgadas = pulgadas;
+        this.resolucion = resolucion;
+        this.encendido = false;
+    }
+    public void encender() {
+        encendido = true;
+        System.out.println("El televisor está encendido.");
+    }
+
+    public void apagar() {
+        encendido = false;
+        System.out.println("El televisor está apagado.");
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Televisor " + marca + " - " + pulgadas + "'' - Resolución: " + resolucion);
+    }
+}
